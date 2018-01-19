@@ -1,0 +1,106 @@
+
+footer{
+  background-color: black;
+}
+.topall{
+  padding: 20px;
+}
+.logo{
+	width: 200px;
+  float: left;
+}
+header{
+  margin: 20px;
+}
+header ul li{
+  display: inline-block;
+  font-size: 20px;
+}
+li{
+  text-decoration: none;
+}
+.form-align{
+  width: 500px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.form-align input, .form-align select, .form-align textarea{
+  display: block;
+  color: white;
+  background-color: #442D4B;
+  font-size: 18px;
+  padding-left: 5px;
+  border: 1px solid white;
+  margin:7px 0 15px;
+  font-family: inherit;
+  width: 100%;
+  padding:3px;
+
+}
+.form-align label{
+  display: block;
+  color: white;
+}
+body{
+  background-color: #442D4B ;
+}
+.topul{
+  float: right;
+}
+h2{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color:#ffcb59;
+  padding: 5px;
+  padding-right: 40px;
+  font-size: 15px;
+}
+.clearfix{
+  clear: both;
+}
+.save{
+  display: block;
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: auto;
+  font-size: 18px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+.footer{
+  height: auto;
+  padding-top: 10px;
+  width: 100%;
+}
+footer .logolink{
+  width: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px
+}
+footer .logo{
+  float: right;
+  margin-top: 15px;
+  padding-right: 10px;
+}
+.divide{
+  display: inline-block;
+  padding-left: 10px;
+}
+.lang{
+  width: 50%;
+  padding-left: 0px;
+
+}
+.rating{
+  width: 50%;
+
+}
