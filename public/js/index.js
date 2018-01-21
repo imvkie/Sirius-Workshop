@@ -1,7 +1,7 @@
 
 $.ajax({
   type:"GET",
-  url:"http://api.myjson.com/bins/tls49",
+  url:"./movies/all",
   success:function(response){
     console.log("Data from success",response);
     //formObject(response)

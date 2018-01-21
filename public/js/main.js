@@ -1,9 +1,9 @@
 $.ajax({
   type: "GET",
-  url: "https://api.myjson.com/bins/tls49",
+  url: "./movies/all",
   dataType: "json",
   success: function(response){
-                var data = formObj(response);
+                var data = formObj(response.data);
                 constructDOM(data);
               },
   error: function(err){ console.log("Error in method ",err);}
