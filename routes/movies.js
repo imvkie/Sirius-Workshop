@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express'),
+     router = express.Router(),
+     moviesController = require('../controllers/moviesController');
 
-var moviesController=require('../controllers/moviesController');
-/* GET users listing. */
-router.get('/all',moviesController.getAllMovies)
-      .post('/add',moviesController.addNewMovie);
-
-module.exports = router;
+ router.get('/all', moviesController.getAllMovies)
+        .post('/add', moviesController.addNewMovie)
+        .get('/:movieName', moviesController.getMovieDetails);
+        
+ module.exports = router;
