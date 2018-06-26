@@ -7,9 +7,11 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var movies = require('./routes/movies');
-var dbService = require('./services/dbService');
+var dbService = require('./service/dbService');
 
 var app = express();
+
+dbService.createConnetion();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,8 +24,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-dbService.createConnection();
 
 app.use('/', index);
 app.use('/movies', movies);
